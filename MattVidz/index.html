@@ -1,0 +1,44 @@
+<!-- doesn't redirect to youtube performs the search function and plays the videos from youtube but displays them in light box right on the webpage -->
+<!-- https://www.eduonix.com/new_dashboard/Learn-Projects-In-JavaScript-And-JQuery -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube Search Engine</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="jquery.fancybox.min.css">
+    <!-- <link rel="stylesheet" type="text/css" href="../css/bootstrap.css"> -->
+    <script src="jquery.fancybox.min.js"></script>
+
+    <script src="script.js"></script>
+    <script></script>
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <h1>Search<span>Vidz</span></h1>
+            <p>Search for Youtube videos</p>
+        </header>
+        <section>
+            <form id="search-form" name="search-form" onsubmit="return search()">
+                <div class="field-container">
+                    <input type="search" id="query" class="search-field" placeholder="Search Youtube...">
+                    <button type="submit" name="search-button" id="search-button" class="search-button">Go</button>
+                </div>
+            </form>
+            <ul id="results"></ul>
+            <div id="buttons"></div>
+        </section>
+        <footer>
+            <p>Copyright &copy; 2020, All Rights Reserved</p>
+        </footer>
+    </div>
+</body>
+
+</html>
